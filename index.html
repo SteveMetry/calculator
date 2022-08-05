@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="custom.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0">
+  <main class="m-5">
+    <div id="resultContainer" class="p-5 grid gap-5 overflow-y-auto calc-area result"></div>
+    <div class="p-5 calc-area typed">
+      <p id="typed"></p>
+    </div>
+    <div class="p-5 grid gap-5 grid-cols-5 calc-area btn-container">
+      <button type="button" onclick="process(7)">7</button>
+      <button type="button" onclick="process(8)">8</button>
+      <button type="button" onclick="process(9)">9</button>
+      <button type="button" onclick="undo()">&#9100;</button>
+      <button type="reset" onclick="reset()">C</button>
+      <button type="button" onclick="process(4)">4</button>
+      <button type="button" onclick="process(5)">5</button>
+      <button type="button" onclick="process(6)">6</button>
+      <button type="button" onclick="process('left')">(</button>
+      <button type="button" onclick="process('right')">)</button>
+      <button type="button" onclick="process(1)">1</button>
+      <button type="button" onclick="process(2)">2</button>
+      <button type="button" onclick="process(3)">3</button>
+      <button type="button" onclick="process('*')">*</button>
+      <button type="button" onclick="process('/')">/</button>
+      <button type="button" onclick="process(0)">0</button>
+      <button type="button" onclick="process('.')">.</button>
+      <button type="button" onclick="compute('=')">=</button>
+      <button type="button" onclick="process('+')">+</button>
+      <button type="button" onclick="process('-')">-</button>
+    </div>
+  </main>
+  <script src="custom.js"></script>
+</body>
+</html>

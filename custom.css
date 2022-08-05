@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.calc-area {
+  border: 1px solid green;
+  width: 374px;
+}
+
+.result,
+.typed {
+  font-size: 20px;
+  min-height: 24px;
+}
+
+.result {
+  max-height: 114px;
+}
+
+.btn-container {
+  grid-template-rows: repeat(4, 50px);
+}
